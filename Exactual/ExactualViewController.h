@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExactualViewController : UIViewController
+@interface ExactualViewController : UIViewController {
+    
+    __weak IBOutlet UILabel *displayOne;
+    
+}
 
 @end

@@ -10,13 +10,20 @@
 
 @interface ExactualViewController ()
 
+
 @end
 
 @implementation ExactualViewController
+- (IBAction)buttonPressed:(UIButton *)sender {
+
+    NSLog(@"TEST");
+
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     [displayOne setFont:[UIFont fontWithName:@"SofiaProLight.otf" size:26]];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,4 +33,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)ButtonPressed:(id)sender {
+}
 @end

@@ -19,6 +19,28 @@
 		10585C97165932F900209637 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10585C95165932F900209637 /* MainStoryboard_iPhone.storyboard */; };
 		10585C9A165932F900209637 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10585C98165932F900209637 /* MainStoryboard_iPad.storyboard */; };
 		10585C9D165932F900209637 /* ExactualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10585C9C165932F900209637 /* ExactualViewController.m */; };
+		10585CA41659393D00209637 /* SofiaProLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10585CA31659393D00209637 /* SofiaProLight.otf */; };
+		10585CE4165944EE00209637 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CCF165944ED00209637 /* clear.png */; };
+		10585CE5165944EE00209637 /* divide.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD0165944ED00209637 /* divide.png */; };
+		10585CE6165944EE00209637 /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD1165944ED00209637 /* dot.png */; };
+		10585CE7165944EE00209637 /* eight.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD2165944ED00209637 /* eight.png */; };
+		10585CE8165944EE00209637 /* equals.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD3165944ED00209637 /* equals.png */; };
+		10585CE9165944EE00209637 /* five.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD4165944ED00209637 /* five.png */; };
+		10585CEA165944EE00209637 /* four.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD5165944ED00209637 /* four.png */; };
+		10585CEB165944EE00209637 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD6165944ED00209637 /* minus.png */; };
+		10585CEC165944EE00209637 /* mplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD7165944ED00209637 /* mplus.png */; };
+		10585CED165944EE00209637 /* mrc.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD8165944ED00209637 /* mrc.png */; };
+		10585CEE165944EE00209637 /* multiply.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CD9165944ED00209637 /* multiply.png */; };
+		10585CEF165944EE00209637 /* nine.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CDA165944EE00209637 /* nine.png */; };
+		10585CF0165944EE00209637 /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CDB165944EE00209637 /* one.png */; };
+		10585CF1165944EE00209637 /* personalizeme.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CDC165944EE00209637 /* personalizeme.png */; };
+		10585CF2165944EE00209637 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CDD165944EE00209637 /* plus.png */; };
+		10585CF3165944EE00209637 /* plusminus.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CDE165944EE00209637 /* plusminus.png */; };
+		10585CF4165944EE00209637 /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CDF165944EE00209637 /* seven.png */; };
+		10585CF5165944EE00209637 /* six.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CE0165944EE00209637 /* six.png */; };
+		10585CF6165944EE00209637 /* three.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CE1165944EE00209637 /* three.png */; };
+		10585CF7165944EE00209637 /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CE2165944EE00209637 /* two.png */; };
+		10585CF8165944EE00209637 /* zero.png in Resources */ = {isa = PBXBuildFile; fileRef = 10585CE3165944EE00209637 /* zero.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +61,28 @@
 		10585C99165932F900209637 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		10585C9B165932F900209637 /* ExactualViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExactualViewController.h; sourceTree = "<group>"; };
 		10585C9C165932F900209637 /* ExactualViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExactualViewController.m; sourceTree = "<group>"; };
+		10585CA31659393D00209637 /* SofiaProLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SofiaProLight.otf; path = Resources/SofiaProLight.otf; sourceTree = "<group>"; };
+		10585CCF165944ED00209637 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clear.png; path = Resources/clear.png; sourceTree = "<group>"; };
+		10585CD0165944ED00209637 /* divide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = divide.png; path = Resources/divide.png; sourceTree = "<group>"; };
+		10585CD1165944ED00209637 /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dot.png; path = Resources/dot.png; sourceTree = "<group>"; };
+		10585CD2165944ED00209637 /* eight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eight.png; path = Resources/eight.png; sourceTree = "<group>"; };
+		10585CD3165944ED00209637 /* equals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = equals.png; path = Resources/equals.png; sourceTree = "<group>"; };
+		10585CD4165944ED00209637 /* five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = five.png; path = Resources/five.png; sourceTree = "<group>"; };
+		10585CD5165944ED00209637 /* four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = four.png; path = Resources/four.png; sourceTree = "<group>"; };
+		10585CD6165944ED00209637 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minus.png; path = Resources/minus.png; sourceTree = "<group>"; };
+		10585CD7165944ED00209637 /* mplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mplus.png; path = Resources/mplus.png; sourceTree = "<group>"; };
+		10585CD8165944ED00209637 /* mrc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mrc.png; path = Resources/mrc.png; sourceTree = "<group>"; };
+		10585CD9165944ED00209637 /* multiply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = multiply.png; path = Resources/multiply.png; sourceTree = "<group>"; };
+		10585CDA165944EE00209637 /* nine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nine.png; path = Resources/nine.png; sourceTree = "<group>"; };
+		10585CDB165944EE00209637 /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = one.png; path = Resources/one.png; sourceTree = "<group>"; };
+		10585CDC165944EE00209637 /* personalizeme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = personalizeme.png; path = Resources/personalizeme.png; sourceTree = "<group>"; };
+		10585CDD165944EE00209637 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus.png; path = Resources/plus.png; sourceTree = "<group>"; };
+		10585CDE165944EE00209637 /* plusminus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plusminus.png; path = Resources/plusminus.png; sourceTree = "<group>"; };
+		10585CDF165944EE00209637 /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seven.png; path = Resources/seven.png; sourceTree = "<group>"; };
+		10585CE0165944EE00209637 /* six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = six.png; path = Resources/six.png; sourceTree = "<group>"; };
+		10585CE1165944EE00209637 /* three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = three.png; path = Resources/three.png; sourceTree = "<group>"; };
+		10585CE2165944EE00209637 /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = two.png; path = Resources/two.png; sourceTree = "<group>"; };
+		10585CE3165944EE00209637 /* zero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zero.png; path = Resources/zero.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +143,28 @@
 		10585C84165932F900209637 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				10585CCF165944ED00209637 /* clear.png */,
+				10585CD0165944ED00209637 /* divide.png */,
+				10585CD1165944ED00209637 /* dot.png */,
+				10585CD2165944ED00209637 /* eight.png */,
+				10585CD3165944ED00209637 /* equals.png */,
+				10585CD4165944ED00209637 /* five.png */,
+				10585CD5165944ED00209637 /* four.png */,
+				10585CD6165944ED00209637 /* minus.png */,
+				10585CD7165944ED00209637 /* mplus.png */,
+				10585CD8165944ED00209637 /* mrc.png */,
+				10585CD9165944ED00209637 /* multiply.png */,
+				10585CDA165944EE00209637 /* nine.png */,
+				10585CDB165944EE00209637 /* one.png */,
+				10585CDC165944EE00209637 /* personalizeme.png */,
+				10585CDD165944EE00209637 /* plus.png */,
+				10585CDE165944EE00209637 /* plusminus.png */,
+				10585CDF165944EE00209637 /* seven.png */,
+				10585CE0165944EE00209637 /* six.png */,
+				10585CE1165944EE00209637 /* three.png */,
+				10585CE2165944EE00209637 /* two.png */,
+				10585CE3165944EE00209637 /* zero.png */,
+				10585CA31659393D00209637 /* SofiaProLight.otf */,
 				10585C85165932F900209637 /* Exactual-Info.plist */,
 				10585C86165932F900209637 /* InfoPlist.strings */,
 				10585C89165932F900209637 /* main.m */,
@@ -168,6 +234,28 @@
 				10585C94165932F900209637 /* Default-568h@2x.png in Resources */,
 				10585C97165932F900209637 /* MainStoryboard_iPhone.storyboard in Resources */,
 				10585C9A165932F900209637 /* MainStoryboard_iPad.storyboard in Resources */,
+				10585CA41659393D00209637 /* SofiaProLight.otf in Resources */,
+				10585CE4165944EE00209637 /* clear.png in Resources */,
+				10585CE5165944EE00209637 /* divide.png in Resources */,
+				10585CE6165944EE00209637 /* dot.png in Resources */,
+				10585CE7165944EE00209637 /* eight.png in Resources */,
+				10585CE8165944EE00209637 /* equals.png in Resources */,
+				10585CE9165944EE00209637 /* five.png in Resources */,
+				10585CEA165944EE00209637 /* four.png in Resources */,
+				10585CEB165944EE00209637 /* minus.png in Resources */,
+				10585CEC165944EE00209637 /* mplus.png in Resources */,
+				10585CED165944EE00209637 /* mrc.png in Resources */,
+				10585CEE165944EE00209637 /* multiply.png in Resources */,
+				10585CEF165944EE00209637 /* nine.png in Resources */,
+				10585CF0165944EE00209637 /* one.png in Resources */,
+				10585CF1165944EE00209637 /* personalizeme.png in Resources */,
+				10585CF2165944EE00209637 /* plus.png in Resources */,
+				10585CF3165944EE00209637 /* plusminus.png in Resources */,
+				10585CF4165944EE00209637 /* seven.png in Resources */,
+				10585CF5165944EE00209637 /* six.png in Resources */,
+				10585CF6165944EE00209637 /* three.png in Resources */,
+				10585CF7165944EE00209637 /* two.png in Resources */,
+				10585CF8165944EE00209637 /* zero.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
