@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExactualViewController : UIViewController {
-    
-    __weak IBOutlet UILabel *displayOne;
-    
-}
+@interface ExactualViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *displayL1;
+@property (weak, nonatomic) IBOutlet UILabel *displayL2;
+@property (weak, nonatomic) IBOutlet UILabel *displayL3;
+@property (weak, nonatomic) IBOutlet UILabel *displayL4;
 
 @end

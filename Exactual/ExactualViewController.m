@@ -7,32 +7,65 @@
 //
 
 #import "ExactualViewController.h"
+#import "ExactualBrain.h"
+
 
 @interface ExactualViewController ()
-
-
+@property (nonatomic) BOOL userIsInTheMiddleOfEnteringANumber;
+@property (nonatomic,strong) ExactualBrain *ebrain;
 @end
 
 @implementation ExactualViewController
-- (IBAction)buttonPressed:(UIButton *)sender {
 
-    NSLog(@"TEST");
+@synthesize displayL1 = _displayL1;
+@synthesize displayL2 = _displayL2;
+@synthesize displayL3 = _displayL3;
+@synthesize displayL4 = _displayL4;
+@synthesize userIsInTheMiddleOfEnteringANumber = _userIsInTheMiddleOfEnteringANumber;
+@synthesize ebrain = _ebrain;
 
+- (ExactualBrain *)ebrain // if i dont have my brain allocate it!
+{
+    if(!_ebrain) _ebrain = [[ExactualBrain alloc] init];
+    return _ebrain;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     [displayOne setFont:[UIFont fontWithName:@"SofiaProLight.otf" size:26]];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+- (IBAction)digitPress:(UIButton *)sender {
+    NSString *digit = [sender currentTitle];
+    if (self.userIsInTheMiddleOfEnteringANumber) {
+        self.displayL1.text = [self.displayL1.text stringByAppendingString:digit];
+    } else {
+        self.displayL1.text = digit;
+        self.userIsInTheMiddleOfEnteringANumber = YES;
+    }
+}
+
+- (IBAction)operationPress:(UIButton *)sender {
+    [self.ebrain determineOperation:[sender currentTitle]];
+    [self.ebrain pushOperand:[self.displayL1.text doubleValue]];
+    self.userIsInTheMiddleOfEnteringANumber = NO;
+}
+
+- (IBAction)equalsPress:(UIButton *)sender {
+    double result = [self.ebrain performOperation:[self.displayL1.text doubleValue]];
+    NSString *resultString = [NSString stringWithFormat:@"%g", result];
+    self.displayL1.text= resultString;
+    self.userIsInTheMiddleOfEnteringANumber = NO;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Dispose of any resources that can be recreaeted.
 }
 
-- (IBAction)ButtonPressed:(id)sender {
-}
 @end
