@@ -13,5 +13,6 @@
 - (double)performOperation:(double)displayOperand;
 - (void)determineOperation:(NSString *)operatorFN;
 - (void)pushOperand:(double)operand;
+- (void)cleanBrain;
 
 @end

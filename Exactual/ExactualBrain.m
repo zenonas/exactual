@@ -30,6 +30,10 @@
     return _operandQueue;
 }
 
+- (void)cleanBrain
+{
+    [self.operandQueue removeAllObjects];
+}
 -(void)pushOperand:(double)operand;
 {
     [self.operandQueue addObject:[NSNumber numberWithDouble:operand]];
@@ -47,6 +51,7 @@
 -(void)determineOperation:(NSString *)operatorFN
 {
     _operatorSymbol = operatorFN;
+      
     //i need to add the last operation pressed as a string in operator symbol
 }
 
@@ -54,10 +59,18 @@
 {
     //perform the operation requested stored in operatorSymbol with the last number in the Queue and the number currently on the display
     double result = 0;
-    if (_operatorSymbol == @"+") {
+
+    if ([_operatorSymbol isEqualToString:@"+"]) {
         result = [self popOperand] + displayOperand;
+        NSLog(@"Operator passed = %@", _operatorSymbol);
+    } else if ([_operatorSymbol isEqualToString:@"-"]) {
+        result = [self popOperand] - displayOperand;
+    } else if ([_operatorSymbol isEqualToString:@"*"]) {
+        result = [self popOperand] * displayOperand;
+    } else if ([_operatorSymbol isEqualToString:@"/"]) {
+        result = [self popOperand] / displayOperand;
     }
-    
+    [self pushOperand:result];
     return result;
 }
 

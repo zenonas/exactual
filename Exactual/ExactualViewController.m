@@ -40,6 +40,9 @@
 
 - (IBAction)digitPress:(UIButton *)sender {
     NSString *digit = [sender currentTitle];
+    if ([digit isEqualToString:@"dot"]) {
+        digit = @".";
+    }
     if (self.userIsInTheMiddleOfEnteringANumber) {
         self.displayL1.text = [self.displayL1.text stringByAppendingString:digit];
     } else {
@@ -47,6 +50,16 @@
         self.userIsInTheMiddleOfEnteringANumber = YES;
     }
 }
+
+- (IBAction)clearPress:(UIButton *)sender {
+    self.displayL1.text = @"0";
+    self.displayL2.text = nil;
+    self.displayL3.text = nil;
+    self.displayL4.text = nil;
+    self.userIsInTheMiddleOfEnteringANumber = NO;
+    [self.ebrain cleanBrain];
+}
+
 
 - (IBAction)operationPress:(UIButton *)sender {
     [self.ebrain determineOperation:[sender currentTitle]];
