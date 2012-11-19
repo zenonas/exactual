@@ -37,10 +37,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.displayL1.font = [UIFont fontWithName:@"SofiaProLight" size:26.0];
-     self.displayL2.font = [UIFont fontWithName:@"SofiaProLight" size:26.0];
-     self.displayL3.font = [UIFont fontWithName:@"SofiaProLight" size:26.0];
-     self.displayL4.font = [UIFont fontWithName:@"SofiaProLight" size:26.0];
+     self.displayL1.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
+     self.displayL2.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
+     self.displayL3.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
+     self.displayL4.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
