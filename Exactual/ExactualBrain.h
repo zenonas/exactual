@@ -11,6 +11,7 @@
 @interface ExactualBrain : NSObject
 
 - (double)performOperation:(double)displayOperand;
+- (double)returnLastAnswer;
 - (void)determineOperation:(NSString *)operatorFN;
 - (void)pushOperand:(double)operand;
 - (void)cleanBrain;

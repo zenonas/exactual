@@ -48,6 +48,14 @@
     //take the last number pressed
 }
 
+-(double)returnLastAnswer
+{
+    NSNumber *operandObject = [self.operandQueue lastObject];
+    if (operandObject) [self.operandQueue removeLastObject];
+    return [operandObject doubleValue];
+    //take the last number pressed
+}
+
 -(void)determineOperation:(NSString *)operatorFN
 {
     _operatorSymbol = operatorFN;
@@ -62,7 +70,7 @@
 
     if ([_operatorSymbol isEqualToString:@"+"]) {
         result = [self popOperand] + displayOperand;
-        NSLog(@"Operator passed = %@", _operatorSymbol);
+      
     } else if ([_operatorSymbol isEqualToString:@"-"]) {
         result = [self popOperand] - displayOperand;
     } else if ([_operatorSymbol isEqualToString:@"*"]) {
@@ -75,3 +83,6 @@
 }
 
 @end
+
+//DEBUG CODE
+//     NSLog(@"Operator passed = %@", _operatorSymbol);

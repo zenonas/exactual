@@ -68,11 +68,34 @@
 }
 
 - (IBAction)equalsPress:(UIButton *)sender {
-    double result = [self.ebrain performOperation:[self.displayL1.text doubleValue]];
+    double result = 0;
+    if ([self.displayL1.text isEqualToString:@"Ans"]) {
+        result = [self.ebrain performOperation:[self.ebrain returnLastAnswer]];
+    } else {
+        result = [self.ebrain performOperation:[self.displayL1.text doubleValue]];
+    }
     NSString *resultString = [NSString stringWithFormat:@"%g", result];
-    self.displayL1.text= resultString;
+    self.displayL1.text = resultString;
     self.userIsInTheMiddleOfEnteringANumber = NO;
 }
+
+- (IBAction)fnPress:(UIButton *)sender {
+
+    if ([[sender currentTitle] isEqualToString:@"fnPlusminus"]){
+        double cNum = [self.displayL1.text doubleValue];
+        if (cNum > 0)
+            cNum = cNum * -1;
+        else
+            cNum = fabs(cNum);
+        NSString *plusMinusString = [NSString stringWithFormat:@"%g", cNum];
+        self.displayL1.text = plusMinusString;
+        self.userIsInTheMiddleOfEnteringANumber = NO;
+    }
+    if ([[sender currentTitle] isEqualToString:@"fnAns"]) {
+        self.displayL1.text = @"Ans";
+    }
+}
+
 
 
 - (void)didReceiveMemoryWarning
