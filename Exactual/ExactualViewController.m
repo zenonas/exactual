@@ -18,6 +18,7 @@
 
 @implementation ExactualViewController
 
+@synthesize leftDrawer = _leftDrawer;
 @synthesize displayL1 = _displayL1;
 @synthesize displayL2 = _displayL2;
 @synthesize displayL3 = _displayL3;
@@ -25,8 +26,6 @@
 @synthesize userIsInTheMiddleOfEnteringANumber = _userIsInTheMiddleOfEnteringANumber;
 @synthesize userAlreadyTypedaDot = _userAlreadyTypedaDot;
 @synthesize ebrain = _ebrain;
-
-
 
 - (ExactualBrain *)ebrain // if i dont have my brain allocate it!
 {
@@ -36,12 +35,17 @@
 
 - (void)viewDidLoad
 {
+    
+  
+ 
+    
     [super viewDidLoad];
      self.displayL1.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
      self.displayL2.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
      self.displayL3.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
      self.displayL4.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
-    
+        
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -51,7 +55,26 @@
     [custombutAlert show];
     
 }
+- (IBAction)expandLeft:(UISwipeGestureRecognizer *)sender {
+    CGRect leftDrawerFrame = CGRectMake(0, 219, 160 , 485);
+    leftDrawer = [[UIView alloc] initWithFrame:leftDrawerFrame];
+    leftDrawer.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:leftDrawer];
 
+}
+
+-(IBAction)expandMenu:(id)sender
+{
+    
+//    [UIView beginAnimations:nil context:nil];
+ //   [UIView setAnimationDuration:0.75];
+   // [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+   // CGRect frame=yourMenuView.frame;
+//    frame.size.width+=200;
+//    yourMenuView.frame=frame;
+//     removeFromSuperview];
+//    [UIView commitAnimations];
+}
 
 - (IBAction)digitPress:(UIButton *)sender {
     NSString *digit = [sender currentTitle];

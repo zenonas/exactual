@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExactualViewController : UIViewController
+@interface ExactualViewController : UIViewController {
+    UIView *leftDrawer;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *displayL1;
 @property (weak, nonatomic) IBOutlet UILabel *displayL2;
 @property (weak, nonatomic) IBOutlet UILabel *displayL3;
 @property (weak, nonatomic) IBOutlet UILabel *displayL4;
+
+@property (nonatomic,retain) UIView *leftDrawer;
 
 @end
