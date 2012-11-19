@@ -12,6 +12,7 @@
 
 @interface ExactualViewController ()
 @property (nonatomic) BOOL userIsInTheMiddleOfEnteringANumber;
+@property (nonatomic) BOOL userAlreadyTypedaDot;
 @property (nonatomic,strong) ExactualBrain *ebrain;
 @end
 
@@ -22,7 +23,10 @@
 @synthesize displayL3 = _displayL3;
 @synthesize displayL4 = _displayL4;
 @synthesize userIsInTheMiddleOfEnteringANumber = _userIsInTheMiddleOfEnteringANumber;
+@synthesize userAlreadyTypedaDot = _userAlreadyTypedaDot;
 @synthesize ebrain = _ebrain;
+
+
 
 - (ExactualBrain *)ebrain // if i dont have my brain allocate it!
 {
@@ -33,16 +37,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     self.displayL1.font = [UIFont fontWithName:@"SofiaProLight" size:26.0];
+     self.displayL2.font = [UIFont fontWithName:@"SofiaProLight" size:26.0];
+     self.displayL3.font = [UIFont fontWithName:@"SofiaProLight" size:26.0];
+     self.displayL4.font = [UIFont fontWithName:@"SofiaProLight" size:26.0];
     
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)customButton:(UIButton *)sender {
+    
+    UIAlertView *custombutAlert = [[UIAlertView alloc] initWithTitle:@"FUTURE FEATURE!" message:@"These are placeholders for future configurable buttons" delegate:nil cancelButtonTitle:@"nvm" otherButtonTitles:nil ];
+    [custombutAlert show];
+    
 }
 
 
 - (IBAction)digitPress:(UIButton *)sender {
     NSString *digit = [sender currentTitle];
-    if ([digit isEqualToString:@"dot"]) {
+    if ([digit isEqualToString:@"dot"] && !(self.userAlreadyTypedaDot)) {
         digit = @".";
-    }
+        self.userAlreadyTypedaDot = YES;
+    } else if ([digit isEqualToString:@"dot"] && (self.userAlreadyTypedaDot)) digit = @"";
     if (self.userIsInTheMiddleOfEnteringANumber) {
         self.displayL1.text = [self.displayL1.text stringByAppendingString:digit];
     } else {
@@ -57,6 +73,7 @@
     self.displayL3.text = nil;
     self.displayL4.text = nil;
     self.userIsInTheMiddleOfEnteringANumber = NO;
+    self.userAlreadyTypedaDot = NO;
     [self.ebrain cleanBrain];
 }
 
@@ -65,6 +82,7 @@
     [self.ebrain determineOperation:[sender currentTitle]];
     [self.ebrain pushOperand:[self.displayL1.text doubleValue]];
     self.userIsInTheMiddleOfEnteringANumber = NO;
+    self.userAlreadyTypedaDot = NO;
 }
 
 - (IBAction)equalsPress:(UIButton *)sender {
@@ -77,6 +95,7 @@
     NSString *resultString = [NSString stringWithFormat:@"%g", result];
     self.displayL1.text = resultString;
     self.userIsInTheMiddleOfEnteringANumber = NO;
+    self.userAlreadyTypedaDot = NO;
 }
 
 - (IBAction)fnPress:(UIButton *)sender {

@@ -51,7 +51,7 @@
 		10C615B3165A5C8F00A1AA0D /* eight960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C6159E165A5C8F00A1AA0D /* eight960.png */; };
 		10C615B4165A5C8F00A1AA0D /* equals960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C6159F165A5C8F00A1AA0D /* equals960.png */; };
 		10C615B5165A5C8F00A1AA0D /* four960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A0165A5C8F00A1AA0D /* four960.png */; };
-		10C615B6165A5C8F00A1AA0D /* mins960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A1165A5C8F00A1AA0D /* mins960.png */; };
+		10C615B6165A5C8F00A1AA0D /* minus960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A1165A5C8F00A1AA0D /* minus960.png */; };
 		10C615B7165A5C8F00A1AA0D /* mplus960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A2165A5C8F00A1AA0D /* mplus960.png */; };
 		10C615B8165A5C8F00A1AA0D /* mrc960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A3165A5C8F00A1AA0D /* mrc960.png */; };
 		10C615B9165A5C8F00A1AA0D /* multiply960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A4165A5C8F00A1AA0D /* multiply960.png */; };
@@ -60,10 +60,11 @@
 		10C615BC165A5C8F00A1AA0D /* plus960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A7165A5C8F00A1AA0D /* plus960.png */; };
 		10C615BD165A5C8F00A1AA0D /* plusminus960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A8165A5C8F00A1AA0D /* plusminus960.png */; };
 		10C615BE165A5C8F00A1AA0D /* seven960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615A9165A5C8F00A1AA0D /* seven960.png */; };
-		10C615BF165A5C8F00A1AA0D /* six960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615AA165A5C8F00A1AA0D /* six960.png */; };
+		10C615BF165A5C8F00A1AA0D /* five960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615AA165A5C8F00A1AA0D /* five960.png */; };
 		10C615C0165A5C8F00A1AA0D /* three960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615AB165A5C8F00A1AA0D /* three960.png */; };
 		10C615C1165A5C8F00A1AA0D /* two960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615AC165A5C8F00A1AA0D /* two960.png */; };
 		10C615C2165A5C8F00A1AA0D /* zero960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615AD165A5C8F00A1AA0D /* zero960.png */; };
+		10C615C5165A6BF800A1AA0D /* six960.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C615C4165A6BF700A1AA0D /* six960.png */; };
 		10F538BF165A595100858DD5 /* MainStoryboard_iPhone35.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F538BD165A595100858DD5 /* MainStoryboard_iPhone35.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -118,7 +119,7 @@
 		10C6159E165A5C8F00A1AA0D /* eight960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eight960.png; path = Resources/keys960/eight960.png; sourceTree = "<group>"; };
 		10C6159F165A5C8F00A1AA0D /* equals960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = equals960.png; path = Resources/keys960/equals960.png; sourceTree = "<group>"; };
 		10C615A0165A5C8F00A1AA0D /* four960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = four960.png; path = Resources/keys960/four960.png; sourceTree = "<group>"; };
-		10C615A1165A5C8F00A1AA0D /* mins960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mins960.png; path = Resources/keys960/mins960.png; sourceTree = "<group>"; };
+		10C615A1165A5C8F00A1AA0D /* minus960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minus960.png; path = Resources/keys960/minus960.png; sourceTree = "<group>"; };
 		10C615A2165A5C8F00A1AA0D /* mplus960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mplus960.png; path = Resources/keys960/mplus960.png; sourceTree = "<group>"; };
 		10C615A3165A5C8F00A1AA0D /* mrc960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mrc960.png; path = Resources/keys960/mrc960.png; sourceTree = "<group>"; };
 		10C615A4165A5C8F00A1AA0D /* multiply960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = multiply960.png; path = Resources/keys960/multiply960.png; sourceTree = "<group>"; };
@@ -127,10 +128,11 @@
 		10C615A7165A5C8F00A1AA0D /* plus960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus960.png; path = Resources/keys960/plus960.png; sourceTree = "<group>"; };
 		10C615A8165A5C8F00A1AA0D /* plusminus960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plusminus960.png; path = Resources/keys960/plusminus960.png; sourceTree = "<group>"; };
 		10C615A9165A5C8F00A1AA0D /* seven960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seven960.png; path = Resources/keys960/seven960.png; sourceTree = "<group>"; };
-		10C615AA165A5C8F00A1AA0D /* six960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = six960.png; path = Resources/keys960/six960.png; sourceTree = "<group>"; };
+		10C615AA165A5C8F00A1AA0D /* five960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = five960.png; path = Resources/keys960/five960.png; sourceTree = "<group>"; };
 		10C615AB165A5C8F00A1AA0D /* three960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = three960.png; path = Resources/keys960/three960.png; sourceTree = "<group>"; };
 		10C615AC165A5C8F00A1AA0D /* two960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = two960.png; path = Resources/keys960/two960.png; sourceTree = "<group>"; };
 		10C615AD165A5C8F00A1AA0D /* zero960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zero960.png; path = Resources/keys960/zero960.png; sourceTree = "<group>"; };
+		10C615C4165A6BF700A1AA0D /* six960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = six960.png; path = Resources/keys960/six960.png; sourceTree = "<group>"; };
 		10F538BE165A595100858DD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone35.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +230,7 @@
 		10C61598165A5C5400A1AA0D /* Keys960 */ = {
 			isa = PBXGroup;
 			children = (
+				10C615C4165A6BF700A1AA0D /* six960.png */,
 				10C61599165A5C8F00A1AA0D /* answer960.png */,
 				10C6159A165A5C8F00A1AA0D /* clear960.png */,
 				10C6159B165A5C8F00A1AA0D /* customizeme960.png */,
@@ -236,7 +239,7 @@
 				10C6159E165A5C8F00A1AA0D /* eight960.png */,
 				10C6159F165A5C8F00A1AA0D /* equals960.png */,
 				10C615A0165A5C8F00A1AA0D /* four960.png */,
-				10C615A1165A5C8F00A1AA0D /* mins960.png */,
+				10C615A1165A5C8F00A1AA0D /* minus960.png */,
 				10C615A2165A5C8F00A1AA0D /* mplus960.png */,
 				10C615A3165A5C8F00A1AA0D /* mrc960.png */,
 				10C615A4165A5C8F00A1AA0D /* multiply960.png */,
@@ -245,7 +248,7 @@
 				10C615A7165A5C8F00A1AA0D /* plus960.png */,
 				10C615A8165A5C8F00A1AA0D /* plusminus960.png */,
 				10C615A9165A5C8F00A1AA0D /* seven960.png */,
-				10C615AA165A5C8F00A1AA0D /* six960.png */,
+				10C615AA165A5C8F00A1AA0D /* five960.png */,
 				10C615AB165A5C8F00A1AA0D /* three960.png */,
 				10C615AC165A5C8F00A1AA0D /* two960.png */,
 				10C615AD165A5C8F00A1AA0D /* zero960.png */,
@@ -372,7 +375,7 @@
 				10C615B3165A5C8F00A1AA0D /* eight960.png in Resources */,
 				10C615B4165A5C8F00A1AA0D /* equals960.png in Resources */,
 				10C615B5165A5C8F00A1AA0D /* four960.png in Resources */,
-				10C615B6165A5C8F00A1AA0D /* mins960.png in Resources */,
+				10C615B6165A5C8F00A1AA0D /* minus960.png in Resources */,
 				10C615B7165A5C8F00A1AA0D /* mplus960.png in Resources */,
 				10C615B8165A5C8F00A1AA0D /* mrc960.png in Resources */,
 				10C615B9165A5C8F00A1AA0D /* multiply960.png in Resources */,
@@ -381,10 +384,11 @@
 				10C615BC165A5C8F00A1AA0D /* plus960.png in Resources */,
 				10C615BD165A5C8F00A1AA0D /* plusminus960.png in Resources */,
 				10C615BE165A5C8F00A1AA0D /* seven960.png in Resources */,
-				10C615BF165A5C8F00A1AA0D /* six960.png in Resources */,
+				10C615BF165A5C8F00A1AA0D /* five960.png in Resources */,
 				10C615C0165A5C8F00A1AA0D /* three960.png in Resources */,
 				10C615C1165A5C8F00A1AA0D /* two960.png in Resources */,
 				10C615C2165A5C8F00A1AA0D /* zero960.png in Resources */,
+				10C615C5165A6BF800A1AA0D /* six960.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
