@@ -12,9 +12,7 @@
 		10131607165A8E5D00837DFD /* exctual114px.png in Resources */ = {isa = PBXBuildFile; fileRef = 10131602165A8E5D00837DFD /* exctual114px.png */; };
 		10131608165A8E5D00837DFD /* exctual144px.png in Resources */ = {isa = PBXBuildFile; fileRef = 10131603165A8E5D00837DFD /* exctual144px.png */; };
 		10131609165A8E5D00837DFD /* exctual512px.png in Resources */ = {isa = PBXBuildFile; fileRef = 10131604165A8E5D00837DFD /* exctual512px.png */; };
-		1013160B165A8E6700837DFD /* exctual114px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1013160A165A8E6700837DFD /* exctual114px.png */; };
-		1013160D165A8E8E00837DFD /* exctual144px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1013160C165A8E8E00837DFD /* exctual144px.png */; };
-		1013160F165A8E9300837DFD /* exctual72px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1013160E165A8E9300837DFD /* exctual72px.png */; };
+		10131611165A946900837DFD /* swipein.png in Resources */ = {isa = PBXBuildFile; fileRef = 10131610165A946900837DFD /* swipein.png */; };
 		10585C7E165932F900209637 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10585C7D165932F900209637 /* UIKit.framework */; };
 		10585C80165932F900209637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10585C7F165932F900209637 /* Foundation.framework */; };
 		10585C82165932F900209637 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10585C81165932F900209637 /* CoreGraphics.framework */; };
@@ -81,9 +79,7 @@
 		10131602165A8E5D00837DFD /* exctual114px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exctual114px.png; path = Resources/icons/exctual114px.png; sourceTree = "<group>"; };
 		10131603165A8E5D00837DFD /* exctual144px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exctual144px.png; path = Resources/icons/exctual144px.png; sourceTree = "<group>"; };
 		10131604165A8E5D00837DFD /* exctual512px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exctual512px.png; path = Resources/icons/exctual512px.png; sourceTree = "<group>"; };
-		1013160A165A8E6700837DFD /* exctual114px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exctual114px.png; sourceTree = "<group>"; };
-		1013160C165A8E8E00837DFD /* exctual144px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exctual144px.png; sourceTree = "<group>"; };
-		1013160E165A8E9300837DFD /* exctual72px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exctual72px.png; sourceTree = "<group>"; };
+		10131610165A946900837DFD /* swipein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swipein.png; path = Resources/swipein.png; sourceTree = "<group>"; };
 		10585C79165932F900209637 /* Exactual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exactual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10585C7D165932F900209637 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		10585C7F165932F900209637 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,9 +163,6 @@
 		10585C6E165932F900209637 = {
 			isa = PBXGroup;
 			children = (
-				1013160E165A8E9300837DFD /* exctual72px.png */,
-				1013160C165A8E8E00837DFD /* exctual144px.png */,
-				1013160A165A8E6700837DFD /* exctual114px.png */,
 				10585C83165932F900209637 /* Exactual */,
 				10585C7C165932F900209637 /* Frameworks */,
 				10585C7A165932F900209637 /* Products */,
@@ -213,6 +206,7 @@
 		10585C84165932F900209637 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				10131610165A946900837DFD /* swipein.png */,
 				10585D0016594ED700209637 /* Icons */,
 				10585D0116594EE200209637 /* Keys */,
 				10585CA31659393D00209637 /* SofiaProLight.otf */,
@@ -414,9 +408,7 @@
 				10131607165A8E5D00837DFD /* exctual114px.png in Resources */,
 				10131608165A8E5D00837DFD /* exctual144px.png in Resources */,
 				10131609165A8E5D00837DFD /* exctual512px.png in Resources */,
-				1013160B165A8E6700837DFD /* exctual114px.png in Resources */,
-				1013160D165A8E8E00837DFD /* exctual144px.png in Resources */,
-				1013160F165A8E9300837DFD /* exctual72px.png in Resources */,
+				10131611165A946900837DFD /* swipein.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
