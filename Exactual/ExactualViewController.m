@@ -15,11 +15,16 @@
 @property (nonatomic) BOOL userAlreadyTypedaDot;
 @property (nonatomic,strong) ExactualBrain *ebrain;
 @property (nonatomic) BOOL hidden;
+@property (nonatomic) BOOL leftDrawerOpen;
+@property (nonatomic) BOOL rightDrawerOpen;
 @end
 
 @implementation ExactualViewController
 
-@synthesize leftDrawer = _leftDrawer;
+@synthesize leftDrawerOpen = _leftDrawerOpen;
+@synthesize rightDrawerOpen = _rightDrawerOpen;
+@synthesize leftDrawer;
+@synthesize rightDrawer;
 @synthesize displayL1 = _displayL1;
 @synthesize displayL2 = _displayL2;
 @synthesize displayL3 = _displayL3;
@@ -38,11 +43,27 @@
 - (void)viewDidLoad
 {
   //  leftDrawerController = [self.storyboard //instantiateViewControllerWithIdentifier:@"leftMenu"];
-    [self.view addSubview:leftDrawerController];
+//    [self.view addSubview:leftDrawerController];
     //CGRect leftDrawerFrame = CGRectMake(0, 219, 160 , 329);
 //    leftDrawer = [[UIView alloc] initWithFrame:leftDrawerFrame];
   //  leftDrawer.backgroundColor = [[UIColor alloc] initWithRed:154.00 green:155.0 blue:159.0 alpha:1];
 //    [self.view addSubview:leftDrawer];
+    
+    _leftDrawerOpen = NO;
+    _rightDrawerOpen = NO;
+    
+    UISwipeGestureRecognizer *swipeFromLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(fromLeftSwipeHandler)];
+    swipeFromLeft.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeFromLeft];
+    
+    UISwipeGestureRecognizer *swipeFromRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(fromRightSwipeHandler)];
+    swipeFromRight.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeFromRight];
+    
+    CGRect leftDrawerFrame = [leftDrawer frame];
+    leftDrawerFrame.origin.x = -160;
+    [leftDrawer setFrame:leftDrawerFrame];
+    
     [super viewDidLoad];
      self.displayL1.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
      self.displayL2.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
@@ -59,18 +80,77 @@
     [custombutAlert show];
     
 }
-- (IBAction)expandLeft:(UISwipeGestureRecognizer *)sender {
-    
 
- //   [UIView beginAnimations:nil context:nil];
-  //  [UIView setAnimationDuration:0.75];
-//    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-//    CGRect leftDrawerFrame =  leftDrawer.frame;
-  //  leftDrawerFrame.size.width += 160;
-//    leftDrawer.frame = leftDrawerFrame;
-  //  [leftDrawer removeFromSuperview];
-//    [UIView commitAnimations];
+- (void)fromLeftSwipeHandler
+{
+    
+    
+    if((_leftDrawerOpen == NO) && (_rightDrawerOpen == NO)){
+
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.75];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+        CGRect leftDrawerFrame =  [leftDrawer frame];
+        leftDrawerFrame.origin.x += 160;
+        [leftDrawer setFrame:leftDrawerFrame];
+    
+        [UIView commitAnimations];
+        
+        _leftDrawerOpen = YES;
+        return;
+
+    }
+    if ((_rightDrawerOpen == YES) && (_leftDrawerOpen == NO)){
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.75];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+        CGRect rightDrawerFrame =  [rightDrawer frame];
+        rightDrawerFrame.origin.x += 160;
+        [rightDrawer setFrame:rightDrawerFrame];
+        
+        [UIView commitAnimations];
+
+        _rightDrawerOpen = NO;
+        return;
+    }
+
 }
+
+
+- (void)fromRightSwipeHandler
+{
+    
+    
+    if((_leftDrawerOpen == YES) && (_rightDrawerOpen == NO)){
+        
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.75];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+        CGRect leftDrawerFrame =  [leftDrawer frame];
+        leftDrawerFrame.origin.x -= 160;
+        [leftDrawer setFrame:leftDrawerFrame];
+        
+        [UIView commitAnimations];
+        
+        _leftDrawerOpen = NO;
+        return;
+        
+    }
+    if ((_rightDrawerOpen == NO) && (_leftDrawerOpen == NO)){
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.75];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+        CGRect rightDrawerFrame =  [rightDrawer frame];
+        rightDrawerFrame.origin.x -= 160;
+        [rightDrawer setFrame:rightDrawerFrame];
+        
+        [UIView commitAnimations];
+        _rightDrawerOpen = YES;
+        return;
+    }
+    
+}
+
 
 -(IBAction)expandMenu:(id)sender
 {
