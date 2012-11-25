@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ExactualViewController : UIViewController {
-    UIView *leftDrawerController;
     
+
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *displayL1;

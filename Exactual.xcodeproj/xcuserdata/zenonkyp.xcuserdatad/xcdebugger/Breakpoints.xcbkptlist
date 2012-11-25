@@ -21,11 +21,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Exactual/ExactualViewController.m"
-         timestampString = "375062762.933568"
+         timestampString = "375554810.139682"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "128"
-         endingLineNumber = "128">
+         startingLineNumber = "136"
+         endingLineNumber = "136"
+         landmarkName = "-equalsPress:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -58,11 +60,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Exactual/ExactualViewController.m"
-         timestampString = "375062762.933568"
+         timestampString = "375554810.139682"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "138"
-         endingLineNumber = "138">
+         startingLineNumber = "146"
+         endingLineNumber = "146"
+         landmarkName = "-fnPress:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -73,7 +77,9 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "43"
-         endingLineNumber = "43">
+         endingLineNumber = "43"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -84,7 +90,9 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "40"
-         endingLineNumber = "40">
+         endingLineNumber = "40"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
