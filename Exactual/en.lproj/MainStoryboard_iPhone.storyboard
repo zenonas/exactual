@@ -36,7 +36,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" autoresizesSubviews="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aEk-UY-SCd">
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aEk-UY-SCd">
                                 <rect key="frame" x="0.0" y="219" width="79" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="1" image="mrc.png">
@@ -374,6 +374,14 @@
                                     <segue destination="PBx-XR-juW" kind="embed" id="bcg-Sm-SfL"/>
                                 </connections>
                             </containerView>
+                            <containerView contentMode="scaleToFill" id="YD0-7k-y5Z">
+                                <rect key="frame" x="320" y="219" width="160" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="ro3-hh-NTi" kind="embed" id="kgd-dx-iEG"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.60000002384185791" green="0.60784316062927246" blue="0.61960786581039429" alpha="1" colorSpace="deviceRGB"/>
                         <gestureRecognizers/>
@@ -386,6 +394,7 @@
                         <outlet property="displayL3" destination="AAk-t4-jgN" id="cmt-xF-ksG"/>
                         <outlet property="displayL4" destination="fzb-4l-Vfz" id="iCg-mX-ybI"/>
                         <outlet property="leftDrawer" destination="C9L-It-qGF" id="vvn-Ch-vIZ"/>
+                        <outlet property="rightDrawer" destination="YD0-7k-y5Z" id="BLs-vy-yqn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -417,7 +426,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQi-b9-PVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="215"/>
+            <point key="canvasLocation" x="-161" y="345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ygt-CJ-dnF">
+            <objects>
+                <viewController id="ro3-hh-NTi" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="naD-FR-HSU">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="329"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="swipein.png" id="DRU-5A-x0u">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="329"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiM-zF-cHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509" y="335"/>
         </scene>
     </scenes>
     <resources>
@@ -461,6 +491,7 @@
                 <relationship kind="outlet" name="displayL3" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="displayL4" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="leftDrawer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="rightDrawer" candidateClass="UIView"/>
             </relationships>
         </class>
     </classes>

@@ -24,6 +24,7 @@
 @synthesize leftDrawerOpen = _leftDrawerOpen;
 @synthesize rightDrawerOpen = _rightDrawerOpen;
 @synthesize leftDrawer;
+@synthesize rightDrawer;
 @synthesize displayL1 = _displayL1;
 @synthesize displayL2 = _displayL2;
 @synthesize displayL3 = _displayL3;
@@ -84,7 +85,7 @@
 {
     
     
-    if(_leftDrawerOpen == NO) {
+    if((_leftDrawerOpen == NO) && (_rightDrawerOpen == NO)){
 
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.75];
@@ -96,17 +97,21 @@
         [UIView commitAnimations];
         
         _leftDrawerOpen = YES;
+        return;
 
-    } else if (_rightDrawerOpen == YES){
+    }
+    if ((_rightDrawerOpen == YES) && (_leftDrawerOpen == NO)){
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.75];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-        CGRect leftDrawerFrame =  [leftDrawer frame];
-        leftDrawerFrame.origin.x -= 160;
-        [leftDrawer setFrame:leftDrawerFrame];
+        CGRect rightDrawerFrame =  [rightDrawer frame];
+        rightDrawerFrame.origin.x += 160;
+        [rightDrawer setFrame:rightDrawerFrame];
         
         [UIView commitAnimations];
 
+        _rightDrawerOpen = NO;
+        return;
     }
 
 }
@@ -116,7 +121,7 @@
 {
     
     
-    if(_leftDrawerOpen == YES) {
+    if((_leftDrawerOpen == YES) && (_rightDrawerOpen == NO)){
         
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.75];
@@ -128,17 +133,20 @@
         [UIView commitAnimations];
         
         _leftDrawerOpen = NO;
+        return;
         
-    } else if (_rightDrawerOpen == YES){
+    }
+    if ((_rightDrawerOpen == NO) && (_leftDrawerOpen == NO)){
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.75];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-        CGRect leftDrawerFrame =  [leftDrawer frame];
-        leftDrawerFrame.origin.x -= 160;
-        [leftDrawer setFrame:leftDrawerFrame];
+        CGRect rightDrawerFrame =  [rightDrawer frame];
+        rightDrawerFrame.origin.x -= 160;
+        [rightDrawer setFrame:rightDrawerFrame];
         
         [UIView commitAnimations];
-        
+        _rightDrawerOpen = YES;
+        return;
     }
     
 }
