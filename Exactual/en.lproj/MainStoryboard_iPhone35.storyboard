@@ -360,6 +360,22 @@
                                     <action selector="equalsPress:" destination="2" eventType="touchUpInside" id="ygo-Ch-oh8"/>
                                 </connections>
                             </button>
+                            <containerView contentMode="scaleToFill" id="vZs-ml-6MN">
+                                <rect key="frame" x="-160" y="177" width="160" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="w6I-C5-BKn" kind="embed" id="Nzt-Ti-YH2"/>
+                                </connections>
+                            </containerView>
+                            <containerView contentMode="scaleToFill" id="5oZ-m5-wLW">
+                                <rect key="frame" x="320" y="177" width="160" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="iVR-ry-sLJ" kind="embed" id="Epc-8o-k0t"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.60000002384185791" green="0.60784316062927246" blue="0.61960786581039429" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -369,11 +385,55 @@
                         <outlet property="displayL1" destination="HiH-Ch-u7n" id="5W8-RB-tR5"/>
                         <outlet property="displayL2" destination="eVX-K7-eBl" id="QeK-XS-S1w"/>
                         <outlet property="displayL3" destination="AAk-t4-jgN" id="cmt-xF-ksG"/>
+                        <outlet property="leftDrawer" destination="vZs-ml-6MN" id="ACz-vx-m3o"/>
+                        <outlet property="rightDrawer" destination="5oZ-m5-wLW" id="MkO-i3-FIg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="118" y="96"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qe6-eq-z3d">
+            <objects>
+                <viewController id="w6I-C5-BKn" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rtR-e4-YCX">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="283"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="swipein920.png" id="QY1-ha-baG">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="283"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFU-wj-W2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rW3-jO-8Be">
+            <objects>
+                <viewController id="iVR-ry-sLJ" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="epE-5e-kOK">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="283"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="swipein920.png" id="9Rm-LF-3xz">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="283"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omc-9d-Y5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="217"/>
         </scene>
     </scenes>
     <resources>
@@ -396,6 +456,7 @@
         <image name="plusminus960.png" width="158" height="110"/>
         <image name="seven960.png" width="158" height="110"/>
         <image name="six960.png" width="158" height="110"/>
+        <image name="swipein920.png" width="318" height="566"/>
         <image name="three960.png" width="158" height="110"/>
         <image name="two960.png" width="158" height="110"/>
         <image name="zero960.png" width="158" height="110"/>
@@ -404,19 +465,12 @@
         <class className="ExactualViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ExactualViewController.h"/>
             <relationships>
-                <relationship kind="action" name="clearPress:" candidateClass="UIButton"/>
-                <relationship kind="action" name="customButton:" candidateClass="UIButton"/>
-                <relationship kind="action" name="digitPress:" candidateClass="UIButton"/>
-                <relationship kind="action" name="equalsPress:" candidateClass="UIButton"/>
-                <relationship kind="action" name="expandLeft:" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="action" name="expandMenu:"/>
-                <relationship kind="action" name="fnPress:" candidateClass="UIButton"/>
-                <relationship kind="action" name="operationPress:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="displayL1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="displayL2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="displayL3" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="displayL4" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="leftDrawer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="rightDrawer" candidateClass="UIView"/>
             </relationships>
         </class>
     </classes>
