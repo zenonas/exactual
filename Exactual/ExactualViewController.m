@@ -20,7 +20,6 @@
 @implementation ExactualViewController
 
 @synthesize leftDrawer = _leftDrawer;
-@synthesize leftDrawerController = _leftDrawerController;
 @synthesize displayL1 = _displayL1;
 @synthesize displayL2 = _displayL2;
 @synthesize displayL3 = _displayL3;
