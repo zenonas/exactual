@@ -120,7 +120,7 @@
 		10585CF916594E5A00209637 /* ExactualBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExactualBrain.h; sourceTree = "<group>"; };
 		10585CFA16594E5B00209637 /* ExactualBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExactualBrain.m; sourceTree = "<group>"; };
 		10585D0216594F2000209637 /* ans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ans.png; path = Resources/ans.png; sourceTree = "<group>"; };
-		105E3EDF1662DE7A00B82F37 /* swipein920.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swipein920.png; path = Exactual/Resources/swipein920.png; sourceTree = "<group>"; };
+		105E3EDF1662DE7A00B82F37 /* swipein920.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swipein920.png; path = Resources/swipein920.png; sourceTree = "<group>"; };
 		10C61599165A5C8F00A1AA0D /* answer960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = answer960.png; path = Resources/keys960/answer960.png; sourceTree = "<group>"; };
 		10C6159A165A5C8F00A1AA0D /* clear960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clear960.png; path = Resources/keys960/clear960.png; sourceTree = "<group>"; };
 		10C6159B165A5C8F00A1AA0D /* customizeme960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = customizeme960.png; path = Resources/keys960/customizeme960.png; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 		10585C6E165932F900209637 = {
 			isa = PBXGroup;
 			children = (
-				105E3EDF1662DE7A00B82F37 /* swipein920.png */,
 				10585C83165932F900209637 /* Exactual */,
 				10585C7C165932F900209637 /* Frameworks */,
 				10585C7A165932F900209637 /* Products */,
@@ -207,6 +206,7 @@
 		10585C84165932F900209637 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				105E3EDF1662DE7A00B82F37 /* swipein920.png */,
 				10585D0016594ED700209637 /* Icons */,
 				10585D0116594EE200209637 /* Keys */,
 				10585CA31659393D00209637 /* SofiaProLight.otf */,

@@ -470,10 +470,8 @@
                 <relationship kind="outlet" name="displayL3" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="displayL4" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="leftDrawer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="rightDrawer" candidateClass="UIView"/>
             </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
