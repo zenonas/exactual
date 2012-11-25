@@ -19,6 +19,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *displayL4;
 @property (weak, nonatomic) IBOutlet UIView *leftDrawer;
 
-@property (nonatomic,retain) UIViewController * leftDrawerController;
 
 @end
