@@ -23,6 +23,7 @@
 
 @synthesize leftDrawerOpen = _leftDrawerOpen;
 @synthesize rightDrawerOpen = _rightDrawerOpen;
+@synthesize displayWeb;
 @synthesize leftDrawer;
 @synthesize rightDrawer;
 @synthesize displayL1 = _displayL1;
@@ -42,16 +43,22 @@
 
 - (void)viewDidLoad
 {
-  //  leftDrawerController = [self.storyboard //instantiateViewControllerWithIdentifier:@"leftMenu"];
-//    [self.view addSubview:leftDrawerController];
-    //CGRect leftDrawerFrame = CGRectMake(0, 219, 160 , 329);
-//    leftDrawer = [[UIView alloc] initWithFrame:leftDrawerFrame];
-  //  leftDrawer.backgroundColor = [[UIColor alloc] initWithRed:154.00 green:155.0 blue:159.0 alpha:1];
-//    [self.view addSubview:leftDrawer];
+    /* Custom subview code
+     
+    leftDrawerController = [self.storyboard instantiateViewControllerWithIdentifier:@"leftMenu"];
+    [self.view addSubview:leftDrawerController];
+    CGRect leftDrawerFrame = CGRectMake(0, 219, 160 , 329);
+    leftDrawer = [[UIView alloc] initWithFrame:leftDrawerFrame];
+    leftDrawer.backgroundColor = [[UIColor alloc] initWithRed:154.00 green:155.0 blue:159.0 alpha:1];
+    [self.view addSubview:leftDrawer];
+    
+     */
+     
+    NSString *customMathML = @"<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>&#x2212;</mo><mi>b</mi><mo>&#xB1;</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></math>";
+    [self.displayWeb loadHTMLString:customMathML baseURL:nil];
     
     _leftDrawerOpen = NO;
     _rightDrawerOpen = NO;
-    
     UISwipeGestureRecognizer *swipeFromLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(fromLeftSwipeHandler)];
     swipeFromLeft.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeFromLeft];

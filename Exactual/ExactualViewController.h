@@ -20,5 +20,6 @@
 @property (weak, nonatomic) IBOutlet UIView *leftDrawer;
 @property (weak, nonatomic) IBOutlet UIView *rightDrawer;
 
+@property (weak, nonatomic) IBOutlet UIWebView *displayWeb;
 
 @end
