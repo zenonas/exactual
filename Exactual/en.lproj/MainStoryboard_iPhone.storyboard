@@ -12,24 +12,6 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eVX-K7-eBl">
-                                <rect key="frame" x="7" y="86" width="307" height="30"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AAk-t4-jgN">
-                                <rect key="frame" x="7" y="48" width="307" height="30"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fzb-4l-Vfz">
-                                <rect key="frame" x="7" y="10" width="307" height="30"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HiH-Ch-u7n">
                                 <rect key="frame" x="7" y="124" width="307" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
@@ -383,7 +365,7 @@
                                 </connections>
                             </containerView>
                             <webView contentMode="scaleToFill" id="1Tv-q5-uL2">
-                                <rect key="frame" x="27" y="20" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.96199363470077515" blue="0.98520439863204956" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -395,10 +377,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="displayL1" destination="HiH-Ch-u7n" id="5W8-RB-tR5"/>
-                        <outlet property="displayL2" destination="eVX-K7-eBl" id="QeK-XS-S1w"/>
-                        <outlet property="displayL3" destination="AAk-t4-jgN" id="cmt-xF-ksG"/>
-                        <outlet property="displayL4" destination="fzb-4l-Vfz" id="iCg-mX-ybI"/>
-                        <outlet property="displayWeb" destination="1Tv-q5-uL2" id="Oc5-CR-m4R"/>
+                        <outlet property="displayWeb" destination="1Tv-q5-uL2" id="PHI-re-9am"/>
                         <outlet property="leftDrawer" destination="C9L-It-qGF" id="vvn-Ch-vIZ"/>
                         <outlet property="rightDrawer" destination="YD0-7k-y5Z" id="BLs-vy-yqn"/>
                     </connections>
@@ -481,27 +460,6 @@
         <image name="two.png" width="158" height="128"/>
         <image name="zero.png" width="158" height="128"/>
     </resources>
-    <classes>
-        <class className="ExactualViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExactualViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="clearPress:" candidateClass="UIButton"/>
-                <relationship kind="action" name="customButton:" candidateClass="UIButton"/>
-                <relationship kind="action" name="digitPress:" candidateClass="UIButton"/>
-                <relationship kind="action" name="equalsPress:" candidateClass="UIButton"/>
-                <relationship kind="action" name="expandMenu:"/>
-                <relationship kind="action" name="fnPress:" candidateClass="UIButton"/>
-                <relationship kind="action" name="operationPress:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="displayL1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="displayL2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="displayL3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="displayL4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="displayWeb" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="leftDrawer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="rightDrawer" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

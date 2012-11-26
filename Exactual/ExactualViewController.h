@@ -14,12 +14,12 @@
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *displayL1;
-@property (weak, nonatomic) IBOutlet UILabel *displayL2;
-@property (weak, nonatomic) IBOutlet UILabel *displayL3;
-@property (weak, nonatomic) IBOutlet UILabel *displayL4;
+@property (weak, nonatomic) IBOutlet UIWebView *displayWeb;
+
+
 @property (weak, nonatomic) IBOutlet UIView *leftDrawer;
 @property (weak, nonatomic) IBOutlet UIView *rightDrawer;
 
-@property (weak, nonatomic) IBOutlet UIWebView *displayWeb;
+
 
 @end

@@ -8,6 +8,7 @@
 
 #import "ExactualViewController.h"
 #import "ExactualBrain.h"
+#import "MathMLConvert.h"
 
 
 @interface ExactualViewController ()
@@ -23,13 +24,13 @@
 
 @synthesize leftDrawerOpen = _leftDrawerOpen;
 @synthesize rightDrawerOpen = _rightDrawerOpen;
-@synthesize displayWeb;
+
 @synthesize leftDrawer;
 @synthesize rightDrawer;
+
 @synthesize displayL1 = _displayL1;
-@synthesize displayL2 = _displayL2;
-@synthesize displayL3 = _displayL3;
-@synthesize displayL4 = _displayL4;
+@synthesize displayWeb;
+
 @synthesize userIsInTheMiddleOfEnteringANumber = _userIsInTheMiddleOfEnteringANumber;
 @synthesize userAlreadyTypedaDot = _userAlreadyTypedaDot;
 @synthesize ebrain = _ebrain;
@@ -53,9 +54,24 @@
     [self.view addSubview:leftDrawer];
     
      */
-     
-    NSString *customMathML = @"<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>&#x2212;</mo><mi>b</mi><mo>&#xB1;</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></math>";
-    [self.displayWeb loadHTMLString:customMathML baseURL:nil];
+/*
+    NSString *customMathML = @"<html><head><<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>&#x2212;</mo><mi>b</mi><mo>&#xB1;</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></math>";
+ 
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSURL *fileURL = [NSURL fileURLWithPath:[documentsDirectory stringByAppendingPathComponent:@"/"]];*/
+    NSString *startDisplayHtml = @"<html><head><script type=\"text/javascript\" src=\"ASCIIMathML.js\"></script></head><body><p>amath $";
+    NSString *expressionToDisplay = @"\\frac{sqrt(2)}{2}";
+    NSString *trailHtml = @"$ endamath</p></body></html>";
+    NSString *customMathML = [startDisplayHtml stringByAppendingString:expressionToDisplay];
+    customMathML = [customMathML stringByAppendingString:trailHtml];
+    NSLog(@"%@",customMathML);
+    [self.displayWeb loadHTMLString:customMathML baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
+
+ //   NSString *indexPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html" inDirectory:@"ASCIIMathML/"];
+
+    
+   // [displayWeb loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:indexPath]]];
+    //[displayWeb loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"] isDirectory:NO ]]];
     
     _leftDrawerOpen = NO;
     _rightDrawerOpen = NO;
@@ -73,9 +89,7 @@
     
     [super viewDidLoad];
      self.displayL1.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
-     self.displayL2.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
-     self.displayL3.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
-     self.displayL4.font = [UIFont fontWithName:@"SofiaProLight" size:30.0];
+
         
 
 	// Do any additional setup after loading the view, typically from a nib.
@@ -190,9 +204,8 @@
 
 - (IBAction)clearPress:(UIButton *)sender {
     self.displayL1.text = @"0";
-    self.displayL2.text = nil;
-    self.displayL3.text = nil;
-    self.displayL4.text = nil;
+    // I need to clear the webview still
+    
     self.userIsInTheMiddleOfEnteringANumber = NO;
     self.userAlreadyTypedaDot = NO;
     [self.ebrain cleanBrain];

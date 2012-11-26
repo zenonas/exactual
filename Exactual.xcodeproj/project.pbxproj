@@ -12,6 +12,9 @@
 		10131607165A8E5D00837DFD /* exctual114px.png in Resources */ = {isa = PBXBuildFile; fileRef = 10131602165A8E5D00837DFD /* exctual114px.png */; };
 		10131608165A8E5D00837DFD /* exctual144px.png in Resources */ = {isa = PBXBuildFile; fileRef = 10131603165A8E5D00837DFD /* exctual144px.png */; };
 		10131609165A8E5D00837DFD /* exctual512px.png in Resources */ = {isa = PBXBuildFile; fileRef = 10131604165A8E5D00837DFD /* exctual512px.png */; };
+		1050D797166366FF00646F71 /* MathMLConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1050D796166366FF00646F71 /* MathMLConvert.m */; };
+		1050D79C16637E9E00646F71 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 1050D79A16637E9E00646F71 /* test.html */; };
+		1050D79F166394CA00646F71 /* ASCIIMathML.js in Resources */ = {isa = PBXBuildFile; fileRef = 1050D79916637E9E00646F71 /* ASCIIMathML.js */; };
 		10585C7E165932F900209637 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10585C7D165932F900209637 /* UIKit.framework */; };
 		10585C80165932F900209637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10585C7F165932F900209637 /* Foundation.framework */; };
 		10585C82165932F900209637 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10585C81165932F900209637 /* CoreGraphics.framework */; };
@@ -79,6 +82,10 @@
 		10131602165A8E5D00837DFD /* exctual114px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exctual114px.png; path = Resources/icons/exctual114px.png; sourceTree = "<group>"; };
 		10131603165A8E5D00837DFD /* exctual144px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exctual144px.png; path = Resources/icons/exctual144px.png; sourceTree = "<group>"; };
 		10131604165A8E5D00837DFD /* exctual512px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exctual512px.png; path = Resources/icons/exctual512px.png; sourceTree = "<group>"; };
+		1050D795166366FF00646F71 /* MathMLConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathMLConvert.h; sourceTree = "<group>"; };
+		1050D796166366FF00646F71 /* MathMLConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathMLConvert.m; sourceTree = "<group>"; };
+		1050D79916637E9E00646F71 /* ASCIIMathML.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ASCIIMathML.js; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/../../../../../../../../../Users/zenonkyp/Dropbox/dev/Exactual/Exactual/Resources/ASCIIMath/ASCIIMathML.js; sourceTree = "<absolute>"; };
+		1050D79A16637E9E00646F71 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = Resources/ASCIIMath/test.html; sourceTree = "<group>"; };
 		10585C79165932F900209637 /* Exactual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exactual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10585C7D165932F900209637 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		10585C7F165932F900209637 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,6 +167,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1050D79D16637EA400646F71 /* ASCIIMathML */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ASCIIMathML;
+			sourceTree = "<group>";
+		};
 		10585C6E165932F900209637 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +204,8 @@
 		10585C83165932F900209637 /* Exactual */ = {
 			isa = PBXGroup;
 			children = (
+				1050D79A16637E9E00646F71 /* test.html */,
+				1050D79916637E9E00646F71 /* ASCIIMathML.js */,
 				10585C8C165932F900209637 /* ExactualAppDelegate.h */,
 				10585C8D165932F900209637 /* ExactualAppDelegate.m */,
 				10585C95165932F900209637 /* MainStoryboard_iPhone.storyboard */,
@@ -198,6 +214,8 @@
 				10585CF916594E5A00209637 /* ExactualBrain.h */,
 				10585CFA16594E5B00209637 /* ExactualBrain.m */,
 				10585C9C165932F900209637 /* ExactualViewController.m */,
+				1050D795166366FF00646F71 /* MathMLConvert.h */,
+				1050D796166366FF00646F71 /* MathMLConvert.m */,
 				10585C84165932F900209637 /* Supporting Files */,
 			);
 			path = Exactual;
@@ -206,6 +224,7 @@
 		10585C84165932F900209637 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1050D79D16637EA400646F71 /* ASCIIMathML */,
 				105E3EDF1662DE7A00B82F37 /* swipein920.png */,
 				10585D0016594ED700209637 /* Icons */,
 				10585D0116594EE200209637 /* Keys */,
@@ -409,6 +428,8 @@
 				10131608165A8E5D00837DFD /* exctual144px.png in Resources */,
 				10131609165A8E5D00837DFD /* exctual512px.png in Resources */,
 				105E3EE01662DE7A00B82F37 /* swipein920.png in Resources */,
+				1050D79F166394CA00646F71 /* ASCIIMathML.js in Resources */,
+				1050D79C16637E9E00646F71 /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +444,7 @@
 				10585C8E165932F900209637 /* ExactualAppDelegate.m in Sources */,
 				10585C9D165932F900209637 /* ExactualViewController.m in Sources */,
 				10585CFB16594E5B00209637 /* ExactualBrain.m in Sources */,
+				1050D797166366FF00646F71 /* MathMLConvert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
