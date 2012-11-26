@@ -174,6 +174,8 @@
 
 - (IBAction)digitPress:(UIButton *)sender {
     NSString *digit = [sender currentTitle];
+    if ([digit isEqualToString:@"0"] && (self.userIsInTheMiddleOfEnteringANumber == NO))
+        return; // protect against trailing 0s
     if ([digit isEqualToString:@"dot"] && !(self.userAlreadyTypedaDot)) {
         digit = @".";
         self.userAlreadyTypedaDot = YES;
