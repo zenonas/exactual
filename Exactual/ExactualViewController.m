@@ -204,7 +204,7 @@
     } else {
         result = [self.ebrain performOperation:[self.displayL1.text doubleValue]];
     }
-    NSString *resultString = [NSString stringWithFormat:@"%g", result];
+    NSString *resultString = [NSString stringWithFormat:@"%.20f", result];
     self.displayL1.text = resultString;
     self.userIsInTheMiddleOfEnteringANumber = NO;
     self.userAlreadyTypedaDot = NO;
@@ -218,7 +218,7 @@
             cNum = cNum * -1;
         else
             cNum = fabs(cNum);
-        NSString *plusMinusString = [NSString stringWithFormat:@"%g", cNum];
+        NSString *plusMinusString = [NSString stringWithFormat:@"%.12f", cNum];
         self.displayL1.text = plusMinusString;
         self.userIsInTheMiddleOfEnteringANumber = NO;
     }
