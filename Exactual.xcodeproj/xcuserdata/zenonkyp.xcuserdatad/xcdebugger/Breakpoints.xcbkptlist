@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Exactual/ExactualViewController.m"
-         timestampString = "375629881.160669"
+         timestampString = "375638739.188641"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "230"
-         endingLineNumber = "230"
+         startingLineNumber = "233"
+         endingLineNumber = "233"
          landmarkName = "-equalsPress:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Exactual/ExactualViewController.m"
-         timestampString = "375629881.160669"
+         timestampString = "375638739.188641"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "240"
-         endingLineNumber = "240"
+         startingLineNumber = "243"
+         endingLineNumber = "243"
          landmarkName = "-fnPress:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -99,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Exactual/MathMLConvert.m"
-         timestampString = "375613629.144974"
+         timestampString = "375638612.230474"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "22"
-         endingLineNumber = "22"
+         startingLineNumber = "44"
+         endingLineNumber = "44"
          landmarkName = "-convertMML:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Exactual/ExactualViewController.m"
-         timestampString = "375629881.160669"
+         timestampString = "375638739.188641"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "67"
-         endingLineNumber = "67"
+         startingLineNumber = "69"
+         endingLineNumber = "69"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Exactual/ExactualViewController.m"
-         timestampString = "375629881.160669"
+         timestampString = "375638739.188641"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "68"
-         endingLineNumber = "68"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>

@@ -11,6 +11,6 @@
 @interface MathMLConvert : NSObject
 
 - (NSString *)convertMML:(NSString *)expressionIn;
-
+- (void)pushKey:(NSString *)keyPushed;
 
 @end

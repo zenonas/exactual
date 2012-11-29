@@ -23,7 +23,7 @@
 @implementation ExactualViewController
 
 @synthesize leftDrawerOpen = _leftDrawerOpen;
-@synthesize rightDrawerOpen = _rightDrawerOpen;
+@synthesize rightDrawerOpen = _rightDrawerOpen; //test
 
 @synthesize leftDrawer;
 @synthesize rightDrawer;
@@ -59,12 +59,15 @@
  
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSURL *fileURL = [NSURL fileURLWithPath:[documentsDirectory stringByAppendingPathComponent:@"/"]];*/
-    NSString *startDisplayHtml = @"<html><head><script type=\"text/javascript\" src=\"ASCIIMathML.js\"></script></head><body><p>amath $";
-    NSString *expressionToDisplay = @"\\frac{sqrt(2)}{2}";
-    NSString *trailHtml = @"$ endamath</p></body></html>";
+    NSString *startDisplayHtml = @"<html><head><meta name=\"format-detection\" content=\"telephone=no\"><script type=\"text/javascript\" src=\"ASCIIMathML.js\"></script></head><body><p>amath ";
+    NSString *expressionToDisplay = @"sqrt(2-5)/(sqrt(5)+log_3 20)+5sqrt(10)";
+    NSString *trailHtml = @" endamath</p></body></html>";
     NSString *customMathML = [startDisplayHtml stringByAppendingString:expressionToDisplay];
     customMathML = [customMathML stringByAppendingString:trailHtml];
     NSLog(@"%@",customMathML);
+    self.displayWeb.scrollView.scrollEnabled = NO;
+    self.displayWeb.scrollView.bounces = NO;
+    
     [self.displayWeb loadHTMLString:customMathML baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
 
  //   NSString *indexPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html" inDirectory:@"ASCIIMathML/"];
@@ -109,7 +112,7 @@
     if((_leftDrawerOpen == NO) && (_rightDrawerOpen == NO)){
 
         [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:0.75];
+        [UIView setAnimationDuration:0.55];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
         CGRect leftDrawerFrame =  [leftDrawer frame];
         leftDrawerFrame.origin.x += 160;
@@ -123,7 +126,7 @@
     }
     if ((_rightDrawerOpen == YES) && (_leftDrawerOpen == NO)){
         [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:0.75];
+        [UIView setAnimationDuration:0.55];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
         CGRect rightDrawerFrame =  [rightDrawer frame];
         rightDrawerFrame.origin.x += 160;
@@ -145,7 +148,7 @@
     if((_leftDrawerOpen == YES) && (_rightDrawerOpen == NO)){
         
         [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:0.75];
+        [UIView setAnimationDuration:0.55];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
         CGRect leftDrawerFrame =  [leftDrawer frame];
         leftDrawerFrame.origin.x -= 160;
@@ -159,7 +162,7 @@
     }
     if ((_rightDrawerOpen == NO) && (_leftDrawerOpen == NO)){
         [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:0.75];
+        [UIView setAnimationDuration:0.55];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
         CGRect rightDrawerFrame =  [rightDrawer frame];
         rightDrawerFrame.origin.x -= 160;
