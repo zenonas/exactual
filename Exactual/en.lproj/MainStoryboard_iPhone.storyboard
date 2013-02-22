@@ -460,17 +460,6 @@
         <image name="two.png" width="158" height="128"/>
         <image name="zero.png" width="158" height="128"/>
     </resources>
-    <classes>
-        <class className="ExactualViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExactualViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="displayL1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="displayWeb" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="leftDrawer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="rightDrawer" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
